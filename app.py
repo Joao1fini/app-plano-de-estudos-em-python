@@ -1,5 +1,7 @@
 import questionary
 import os
+import time
+login1 = False
 def cadastro():
     while True:
         os.system("cls")
@@ -20,6 +22,7 @@ def login():
         for linha in dados:
             usuario, senha_salva = linha.strip().split(",")
             if nome==usuario and senha == senha_salva:
+                os.system("cls")
                 print(f"Bem vindo de volta {nome}")
                 return True
     print("Erro nome/senha incorretos")    
@@ -41,19 +44,24 @@ if usuario.startswith("[1]"):
         ]
     ).ask()
     if lr.startswith("[1]"):
-        login()
+        if login():
+            login1 = True
     elif lr.startswith("[2]"):
         cadastro()
     else:
         print("valor invalido tente novamente ")
         os.system("cls")
-if login == True:
+if login1 == True:
+    os.system("cls")
+    time.sleep(1.5)
     area = questionary.select(
         "Escolha sua area de interesse ",
         choices=[
             "1 - Cybersecurity",
-            "2 - developer",
-            "3 - Data Scienc"
+            "2 - Developer",
+            "3 - Redes"
         ]
     ).ask()
-    
+    if area.startswith("1"):
+  #      with open("conteudo/cyber.txt", "r") as conteudo:
+    #         print(conteudo.read())
