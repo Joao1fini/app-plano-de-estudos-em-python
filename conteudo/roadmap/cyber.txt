@@ -1,15 +1,28 @@
-cyber
-cyber
-cyber
-cyber
-cyber
-cyber
-cyber
-cyber
-cyber
-cyber
-cyber
-cyber
-cyber
-cyber
-cyber
+Cybersegurança Roadmap
+
+1) Fundamentos
+- Redes (TCP/IP, DNS, DHCP, VPN)
+- Sistemas operacionais (Linux/Windows)
+- Protocolos HTTP/HTTPS
+
+2) Segurança
+- Firewalls, IDS/IPS
+- Gestão de vulnerabilidades
+- OWASP Top 10
+
+3) Pentest
+- Reconhecimento e enumeração
+- Exploração
+- Pós-exploração
+
+4) Ferramentas
+- Kali Linux
+- Nmap
+- Wireshark
+- Metasploit
+- Burp Suite
+
+5) Boas práticas
+- Engenharia reversa básica
+- Criptografia
+- Logs e SIEM

@@ -1,0 +1,19 @@
+Roadmap Desenvolvimento
+
+1) Fundamentos
+- Lógica
+- Estruturas de dados
+- Git
+
+2) Front-end
+- HTML, CSS, JS
+- React
+
+3) Back-end
+- Python/Node/Java
+- Banco de Dados
+- Docker
+
+4) DevOps básico
+- Linux
+- CI/CD (GitHub Actions)

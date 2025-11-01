@@ -1,0 +1,10 @@
+Fundamentos de Redes
+- Modelo OSI
+- TCP/IP
+- Portas e Protocolos
+- DNS, DHCP, NAT
+- Sub-redes e máscara
+
+Ferramentas:
+- ping, tracert, nslookup, netstat
+- Wireshark

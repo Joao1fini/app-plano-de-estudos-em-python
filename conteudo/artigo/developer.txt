@@ -1,0 +1,18 @@
+Fundamentos de Programação
+- Lógica
+- Estruturas de dados
+- Algoritmos
+
+Back-end:
+- Python, Node.js ou Java
+- Banco de dados: SQL + NoSQL
+- APIs REST e JSON
+
+Front-end:
+- HTML, CSS, JavaScript
+- Frameworks: React, Vue ou Angular
+
+Boas práticas:
+- Git e GitHub
+- Testes
+- Clean Code

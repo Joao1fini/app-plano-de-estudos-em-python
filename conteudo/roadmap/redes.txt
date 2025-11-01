@@ -1,0 +1,17 @@
+Roadmap Redes
+
+1) Fundamentos
+- OSI x TCP/IP
+- Endereçamento IPv4/IPv6
+- Máscara / Subnetting
+
+2) Equipamentos
+- Switch, Roteador, Firewall
+
+3) Protocolos
+- HTTP, DNS, FTP, SSH, SMTP
+
+4) Segurança de redes
+- IDS/IPS
+- VPN
+- Hardening

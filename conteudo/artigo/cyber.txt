@@ -1,15 +1,17 @@
-cyber
-cyber
-cyber
-cyber
-cyber
-cyber
-cyber
-cyber
-cyber
-cyber
-cyber
-cyber
-cyber
-cyber
-cyber
+Introdução à Cybersegurança
+A segurança digital protege sistemas, dados e redes contra ataques. Conceitos essenciais:
+
+- Confidencialidade, Integridade e Disponibilidade (CIA)
+- Autenticação e Autorização
+- Ataques: phishing, DDoS, malware, spoofing, brute-force
+- Criptografia: simétrica, assimétrica, hashing
+
+Ferramentas iniciais para estudar:
+- Wireshark
+- Nmap
+- Metasploit Framework
+- Burp Suite
+- Linux + Terminal
+
+Recomendações:
+Aprenda redes. Entenda TCP/IP, portas, protocolos, DNS, roteamento. Depois siga para pentest ou segurança defensiva.

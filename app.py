@@ -2,6 +2,27 @@ import questionary
 import os
 import time
 login1 = False
+def conteudos(area):
+    conteudo = questionary.select(
+        "Qual o tipo de conteudo gostaria de ver? ",
+        choices=[
+            "1 - Artigos",
+            "2 - Roadmaps",
+            "3 - Videos"
+        ]
+    ).ask()
+    if conteudo.startswith("1"):
+        with open(f"conteudo/artigo/{area}", "r") as conteudo:
+            os.system("cls")
+            print(conteudo.read())
+    elif conteudo.startswith("2"):
+        with open(f"conteudo/roadmap/{area}", "r") as conteudo:
+            os.system("cls")
+            print(conteudo.read())
+    elif conteudo.startswith("3"):
+        with open(f"conteudo/videos/{area}", "r") as conteudo:
+            os.system("cls")
+            print(conteudo.read())
 def cadastro():
     while True:
         os.system("cls")
@@ -53,7 +74,10 @@ if usuario.startswith("[1]"):
         os.system("cls")
 if login1 == True:
     os.system("cls")
-    time.sleep(1.5)
+    for i in range(1,4):
+        print("carregando"+"."*i)
+        time.sleep(0.8)
+        os.system("cls")
     area = questionary.select(
         "Escolha sua area de interesse ",
         choices=[
@@ -63,5 +87,11 @@ if login1 == True:
         ]
     ).ask()
     if area.startswith("1"):
-  #      with open("conteudo/cyber.txt", "r") as conteudo:
-    #         print(conteudo.read())
+        area = "cyber.txt"
+        conteudos(area)
+    elif area.startswith("2"):
+        area = "developer.txt"
+        conteudos(area)
+    elif area.startswith("3"):
+        area = "redes.txt"
+        conteudos(area)

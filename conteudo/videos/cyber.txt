@@ -1,15 +1,17 @@
-cyber
-cyber
-cyber
-cyber
-cyber
-cyber
-cyber
-cyber
-cyber
-cyber
-cyber
-cyber
-cyber
-cyber
-cyber
+Vídeos e Canais Recomendados
+
+YouTube BR:
+- Gabriel Pato
+- Segurança Legal
+- CryptoRaccoon
+- Hack N' Roll
+
+YouTube EN:
+- LiveOverflow
+- John Hammond
+- NetworkChuck (iniciante)
+- HackTheBox Academy (guias)
+
+CTFs:
+- TryHackMe
+- HackTheBox
