@@ -18,10 +18,10 @@ def conteudos():
             "sair"
         ]
     ).ask()
+    if not escolha: return False
     if escolha.startswith("a"):return "conteudo/artigos"
     elif escolha.startswith("r"):return "conteudo/roadmaps"
     elif escolha.startswith("v"):return "conteudo/videos"
-    elif escolha.startswith("s"): return False
 def cadastro():
     while True:
         os.system("cls")
@@ -97,9 +97,21 @@ def assunto(caminho):
         ).ask()
         full_path = os.path.join(caminho, escolha)
         os.startfile(os.path.abspath(full_path))
-    except ValueError:
+    except (FileNotFoundError, NotADirectoryError, OSError):
         os.makedirs(caminho, exist_ok=True)
         print("pasta não existe")
+def excluir(caminho):
+    os.system("cls")
+    caminho2 = sorted(f for f in os.listdir(caminho))
+    escolha = questionary.select(
+        "Escolha sua area de interesse ",
+            choices=
+                caminho2
+        ).ask()
+    full_path = os.path.join(caminho , escolha)
+    os.remove(full_path)
+    print(f"O arquivo {full_path} foi deletado")
+    time.sleep(1.2)
 while True:
     usuario = questionary.select(
         "Você é um usuario ou colaborador?",
@@ -156,7 +168,8 @@ while True:
                                 "1 - ver conteudo",
                                 "2 - adicionar conteudo",
                                 "3 - editar conteudo",
-                                "4 - voltar"
+                                "4 - Deletar conteudo",
+                                "5 - voltar"
                             ]).ask()
                         if escolha.startswith("1"):
                             caminho = conteudos()
@@ -167,7 +180,6 @@ while True:
                             caminho = conteudos()
                             new_nome = questionary.text("Digite o nome do novo arquivo").ask().strip() + ".txt"
                             novofile = os.path.join(caminho,new_nome)
-
                             with open(novofile,"w") as f:
                                 os.startfile(novofile)
                         elif escolha.startswith("3"):
@@ -176,6 +188,11 @@ while True:
                                 continue
                             assunto(caminho)
                             continue
+                        elif escolha.startswith("4"):
+                            caminho = conteudos()
+                            if not caminho:
+                                continue
+                            excluir(caminho)
                         else:
                             break
             else:
